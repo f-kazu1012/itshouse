@@ -1,0 +1,47 @@
+{% comment %} {{ 'add_custom_blog_page.css' | asset_url | stylesheet_tag }} {% endcomment %}
+{% comment %} 
+/***************************************************
+ トップ画像エリア
+***************************************************/
+{% endcomment %}
+
+{{ 'add_top.css' | asset_url | stylesheet_tag }}
+{% comment %} 
+ <div class="image" style='backgroung-image:url({{ 'top_fv.jpg' | asset_url}})'>aa</div> {% endcomment %}
+
+<div class="txt ">
+  <span class="enFont">
+  A THIRD PLACE<br>
+  FOR EVERYONE</span>
+  サードプレイスを全ての人へ
+</div>
+<div class="menu">
+  <a href="">1  LINEUP</a><br>
+  <a href="">2  QUALITY</a><br>
+  <a href="">3  SALES</a><br>
+  <a href="">4  WORKS</a><br>
+  <a href="">5  PRODUCT</a><br>
+
+</div>
+<img src="{{ 'top_fv.jpg' | asset_url}}" class="image">
+
+{% schema %}
+{
+  "name": "トップ 1 トップ画像エリア",
+  "tag": "section",
+  "class": "top_area",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    
+  
+  ],
+  
+  "presets": [
+    {
+      "name": "トップ 1 トップ画像エリア"
+    }
+  ]
+}
+{% endschema %}

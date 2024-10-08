@@ -11,6 +11,16 @@
   <link rel="stylesheet" href="{{ 'component-mega-menu.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
 
+{{ 'add_header_footer.css' | asset_url | stylesheet_tag }}
+{{ 'add_common.css' | asset_url | stylesheet_tag }}
+
+
+{% comment %} 
+Font
+{% endcomment %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
 <style>
   header-drawer {
@@ -137,7 +147,8 @@
           <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
             {%- if settings.logo != blank -%}
               <div class="header__heading-logo-wrapper">
-                {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
+                <img src="{{ 'logo_com.svg' | asset_url}}" class="hed_logo">
+                {% comment %} {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
                 {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
                 {% capture sizes %}(max-width: {{ settings.logo_width | times: 2 }}px) 50vw, {{ settings.logo_width }}px{% endcapture %}
                 {% capture widths %}{{ settings.logo_width }}, {{ settings.logo_width | times: 1.5 | round }}, {{ settings.logo_width | times: 2 }}{% endcapture %}
@@ -149,7 +160,7 @@
                   alt: logo_alt,
                   sizes: sizes,
                   preload: true
-                }}
+                }} {% endcomment %}
               </div>
             {%- else -%}
               <span class="h2">{{ shop.name }}</span>
