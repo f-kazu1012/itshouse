@@ -8,7 +8,22 @@
 /***************************************************
 ボタン
 ***************************************************/
-
+.com_link{display: flex;justify-content: center;}
+.com_link a{
+    border: 1px solid;border-radius: 50%;
+    display: flex;justify-content: center;align-items: center;
+    flex-wrap: wrap;
+    height: 40px;border-radius: 20px;
+    padding: 0 40px;
+    margin-top: 30px;
+    line-height: 1;
+}
+.com_link a:hover{transform: translate(10px,0);}
+/* 矢印 */
+.com_link a svg{margin-left: 15px;}
+/* カラー */
+.com_link .radias_btn_b {border-color: #000;color: #000;}
+.com_link .radias_btn_w {border-color: #fff;color: #fff;}
 
 
 /***************************************************
@@ -24,3 +39,19 @@ Font
     font-weight: 400;
 }
 
+/***************************************************
+リンク
+***************************************************/
+a{
+    text-decoration: none;color: #000;
+    transition: 0.3s;
+}
+a:hover{opacity: 0.7;}
+
+
+/***************************************************
+FLEX
+***************************************************/
+.flex{display: flex;}
+.f_center{justify-content: center;align-items: center;}
+.f_center{justify-content: center;align-items: bottom;}

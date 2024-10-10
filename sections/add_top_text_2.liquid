@@ -9,28 +9,28 @@
 {% comment %} 
  <div class="image" style='backgroung-image:url({{ 'top_fv.jpg' | asset_url}})'>aa</div> {% endcomment %}
 
-<div class="txt ">
-  <span class="enFont">
-  A THIRD PLACE<br>
-  FOR EVERYONE</span>
-  サードプレイスを全ての人へ
+<div class="flex f_center">
+  <div  class="txt">
+    <h1>サードプレイスを全ての人へ</h1>
+    <p>
+      家でもオフィスでもない、心地よい第三の居場所を<br>
+      創造することで人生を豊かにする
+      </p>
+      <div class="com_link">
+        <a href="" class="radias_btn_w">第三の居場所とは {%- render 'arrow_link' -%} </a>
+      </div>
+    </div>
 </div>
-<div class="menu">
-  <a href="#">1  LINEUP</a><br>
-  <a href="#">2  QUALITY</a><br>
-  <a href="#">3  SALES</a><br>
-  <a href="#">4  WORKS</a><br>
-  <a href="#">5  PRODUCT</a><br>
-</div>
-<img src="{{ 'top_fv.jpg' | asset_url}}" class="image">
+
+
 
 <a href="#" class="tate_link">オンライン説明会開催</a>
 
 {% schema %}
 {
-  "name": "トップ 1 トップ画像エリア",
+  "name": "トップ 2 テキストエリア",
   "tag": "section",
-  "class": "top_area",
+  "class": "top_text",
   "disabled_on": {
     "groups": ["header", "footer"]
   },
@@ -41,7 +41,7 @@
   
   "presets": [
     {
-      "name": "トップ 1 トップ画像エリア"
+      "name": "トップ 2 テキストエリア"
     }
   ]
 }
