@@ -53,5 +53,5 @@ a:hover{opacity: 0.7;}
 FLEX
 ***************************************************/
 .flex{display: flex;}
-.f_center{justify-content: center;align-items: center;}
-.f_center{justify-content: center;align-items: bottom;}
+.f_center{justify-content: center;align-items: center;align-content: center;}
+.f_bottom{justify-content: center;align-items: flex-end;align-content: flex-end;}

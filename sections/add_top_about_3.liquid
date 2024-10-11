@@ -10,25 +10,49 @@
  <div class="image" style='backgroung-image:url({{ 'top_fv.jpg' | asset_url}})'>aa</div> {% endcomment %}
 
 <div class="flex f_bottom">
-  <div class="txt">
-    <h1>ABOUT <span>はじめに</span></h1>
-    <p>
-      家でもオフィスでもない、心地よい第三の居場所を<br>
-      創造することで人生を豊かにする
+  <div class="left_txt flex">
+    <h2 class="com_font_size"><span class="enFont">ABOUT</span> はじめに</h2>
+      <p>
+      心地よい別荘を通じて全ての人の人生を豊かにする。<br>それがit’s HOUSEの目指すべきビジョンです。
       </p>
-      <div class="com_link">
-        <a href="" class="radias_btn_w">第三の居場所とは {%- render 'arrow_link' -%} </a>
+
+      <div class="linkarea">
+        <a href="#"><div><span class="enFont">01</span>私たちの想い</div>{%- render 'arrow_link' -%}</a>
+        <a href="#"><div><span class="enFont">02</span>“別荘”とは何か</div>{%- render 'arrow_link' -%}</a>
       </div>
-    </div>
+  </div>
+  {% comment %} 
+  /***************************************************
+  アコーデオン　リンクボックス
+  ***************************************************/
+  {% endcomment %}
+  <div class="right_link">
+    <a href="#">
+      <div class="txt txt_bk">
+        <div class="in_title com_font_size ">
+          <span class="enFont">ABOUT US</span><br>
+          私たちの想い
+          </div>
+          
+          <p>「第三の居場所を届けたい。」<br>
+            それがit’s HOUSEの想いです。</p>
+        </div>
+    </a>
 
+    <a href="#" class="cover_bg">
+      <div class="txt">
+        <div class="in_title com_font_size">
+          <span class="enFont">LIFESTYLE</span><br>
+          別荘で暮らす
+          </div>
+          
+          <p>日常の喧騒から離れ、自然と時間と自分と向き合える特別な住まい。</p>
+          </div>
+      <img class="" src="{{ 'lifestyle_about.jpg' | asset_url }}">
+    </a>
+  </div>
 
-
-
-</div>あああ
-
-
-
-<a href="#" class="tate_link">オンライン説明会開催</a>
+</div>
 
 {% schema %}
 {
