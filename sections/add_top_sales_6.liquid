@@ -1,0 +1,88 @@
+{% comment %} {{ 'add_custom_blog_page.css' | asset_url | stylesheet_tag }} {% endcomment %}
+{% comment %} 
+/***************************************************
+SALESエリア
+***************************************************/
+{% endcomment %}
+<div class="in_padding">
+  <h2 class="subon">
+    SALES
+    <span>it's HOUSEが提携する<br>
+      全国各地の土地情報</span>
+  </h2>
+
+  <ul class="flex">
+    <li>
+      <p class="posi">{%- render 'add_icon_sales_map' -%} <span>ITOSHIMA</span></p>
+      <div class="img_area">
+        <img class="main_img" src="{{ 'sample_sales.jpg' | asset_url }}">
+      </div>
+        
+      <span class="model com_tag">土地</span>
+      <div class="txt_area">
+        <div class="location enFont_model">{%- render 'add_icon_sales_location_1' -%} LOCATION</div>
+        <div class="title_area">芥屋を一望できる別荘用地</div>
+        <div class="tag_area enFont_model"><span class="com_tag">面積 160㎡</span><span class="com_tag ">1BEDROOM</span></div>
+        <div class="price"><span class="enFont_model">5500</span>万円</div>
+      </div>
+    </li>
+
+    <li>
+      <p class="posi">{%- render 'add_icon_sales_map' -%} <span>ITOSHIMA</span></p>
+      <div class="img_area">
+        <img class="main_img" src="{{ 'sample_sales.jpg' | asset_url }}">
+      </div>
+      <span class="model com_tag">土地</span>
+      <div class="txt_area">
+        <div class="location enFont_model">{%- render 'add_icon_sales_location_2' -%} LOCATION</div>
+        <div class="title_area">芥屋を一望できる別荘用地</div>
+        <div class="tag_area enFont_model"><span class="com_tag">面積 160㎡</span><span class="com_tag ">1BEDROOM</span></div>
+        <div class="price"><span class="enFont_model">5500</span>万円</div>
+      </div>
+    </li>
+
+    <li>
+      <p class="posi">{%- render 'add_icon_sales_map' -%} <span>ITOSHIMA</span></p>
+      <div class="img_area">
+        <img class="main_img" src="{{ 'sample_sales.jpg' | asset_url }}">
+      </div>
+      <span class="model com_tag">土地</span>
+      <div class="txt_area">
+        <div class="location enFont_model">{%- render 'add_icon_sales_location_3' -%} LOCATION</div>
+        <div class="title_area">芥屋を一望できる別荘用地</div>
+        <div class="tag_area enFont_model"><span class="com_tag">面積 160㎡</span><span class="com_tag ">1BEDROOM</span></div>
+        <div class="price"><span class="enFont_model">5500</span>万円</div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+
+<a href="" class="com_bottom_link enFont_model">VIEW MORE</a>
+
+
+<div class="para_area">
+  <img class="main_img" src="{{ 'sample_para.jpg' | asset_url }}">
+</div>
+
+
+{% schema %}
+{
+  "name": "トップ 6 SALESエリア",
+  "tag": "section",
+  "class": "top_sales",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    
+  
+  ],
+  
+  "presets": [
+    {
+      "name": "トップ 6 SALESエリア"
+    }
+  ]
+}
+{% endschema %}

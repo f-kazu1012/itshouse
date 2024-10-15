@@ -2,6 +2,8 @@
 /***************************************************
 トップページ
 ***************************************************/
+/* 背景色 */
+.header-wrapper{background-color:inherit;}
 
 
 /*ファーストビュー*/
@@ -211,11 +213,283 @@
 .top_about .right_link a.cover_bg:hover:before{opacity: 0;}
 
 
+/******************************************/
+/*4th　Lineupエリア*/
+/******************************************/
+.top_lineup{
+    background-color:#F7F7F7 ;
+    margin-top: 120px;
+    padding: 160px 0 120px;
+    position: relative;z-index: 2;
+}
+
+.top_lineup h2.subon{
+    padding:0 80px;
+
+}
+.top_lineup h2.subon span{
+    margin-left: 30px;
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+/* スライドショー */
+/******************************************/
+.top_lineup .swiper{
+    margin-top: 40px;
+}
+.top_lineup .swiper .swiper-slide{
+    position:relative;
+}
+.top_lineup .swiper .swiper-slide img{
+    display: block;
+    object-fit: cover;
+    width: 100%;height: 950vh;
+    max-height: 1000px;min-height: 500px;
+}
+.top_lineup .swiper .swiper-slide .txt{
+    position: absolute;
+    left: 0;right: 0;bottom: 0;
+    color: #fff;
+    justify-content: space-between;align-items: flex-end;
+    padding: 40px 80px;
+}
+
+/*テキスト*/
+.top_lineup .swiper .swiper-slide .txt .left_txt{}
+/* .top_lineup .swiper .swiper-slide .txt .left_txt .sub{} */
+.top_lineup .swiper .swiper-slide .txt .left_txt .model .com_tag{
+    margin-right: 10px;
+}
+.top_lineup .swiper .swiper-slide .txt .left_txt .model{
+    font-size: 1.6rem;
+    margin-top: 10px;
+    font-family: "Noto Sans JP";
+}
+.top_lineup .swiper .swiper-slide .txt .left_txt .model span.name{
+    font-size: 2.0rem;
+    margin-right: 20px;
+}
+.top_lineup .swiper .swiper-slide .txt .right_txt{
+    font-size: 1.4rem;
+    font-family: "Noto Sans JP";
+}
+.top_lineup .swiper .swiper-slide .txt .right_txt span{
+    font-size: 3.2rem;padding: 0 7px;
+}
+
+/* スライド設定 */
+.swiper-pagination{position: relative!important;margin-top: 10px;}
+.swiper-pagination-bullet{background: #fff!important;border:1px solid #000;}
+.swiper-pagination-bullet-active{background: #000!important; opacity: 1!important;}
 
 
 
-/* 背景色 */
-.header-wrapper{background-color:inherit;}
+/* 別荘一覧 */
+/******************************************/
+.top_lineup .villa_list{
+    margin-top: 60px;
+    padding:0 80px;
+}
+.top_lineup .villa_list .list ul{
+    display: flex;flex-wrap: wrap;
+    list-style-type: none;
+    margin: 60px 0;padding: 0;
+    gap: 60px 8px;
+}
+.top_lineup .villa_list .list ul li{
+    width: calc(25% - 6px);
+}
+.top_lineup .villa_list .list ul li img{width: 100%;}
+.top_lineup .villa_list{}
+
+
+/* テキスト設定 */
+.top_lineup .villa_list .list ul li .txt {}
+.top_lineup .villa_list .list ul li .txt .model{}
+.top_lineup .villa_list .list ul li .txt .model span{color: #818181 ;}
+.top_lineup .villa_list .list ul li .txt .tag{margin-top: 10px;font-size: 1.4rem;}
+.top_lineup .villa_list .list ul li .txt .tag span{margin-right:8px;}
+.top_lineup .villa_list .list ul li .txt .price{
+    margin-top: 10px;
+    font-size: 1.4rem;line-height: 1;
+}
+.top_lineup .villa_list .list ul li .txt .price span{
+    font-size: 1.8rem;
+    vertical-align: -3px;
+    vertical-align: bottom;margin-right: 5px;
+}
+
+
+
+.top_lineup .bottom_link{
+    border: 1px solid #000;
+    border-right:none;
+    border-left:none;
+    width: 100%;
+    padding: 25px 0;
+    display: block;
+    text-align: center;
+}
+.top_lineup .bottom_link:hover{
+padding: 30px 0;
+}
+/******************************************/
+/*5th feature　*/
+/******************************************/
+.top_feature{
+    position: relative;
+    z-index: 2;
+}
+.top_feature img.bg{
+    position: absolute;
+    top: 0;right: 0;bottom: 0;left: 0;
+    width: 100%;height: 100%;
+    object-fit: cover;object-position: center;
+    z-index: -1;
+}
+
+.top_feature .in_box{
+    
+}
+.top_feature .in_box .box{
+    width: 100%;
+    
+    position: relative;
+    padding: 145px 80px;
+    display: flex;
+    color: #fff;
+
+}
+
+.top_feature .in_box .box .img_box{
+    width: 50vw;width: 50vw;
+    display: flex;
+    justify-content: center;align-items: center;
+}
+.top_feature .in_box .box .img_box img{
+    margin: auto;
+    width: 45vw;width: 45vw;
+    max-width:800px ;
+    max-height:800px ;
+}
+.top_feature .in_box .box .txt{
+    width: 55vw;
+    padding-left:10vw;
+    display: flex;flex-wrap: wrap;
+    align-content: space-between;
+}
+.top_feature .in_box .box .txt .subon{
+    color: #fff;
+}
+
+
+.top_feature .in_box .box .txt .top_title{width: 100%;}
+
+.top_feature .in_box .box .txt .bottom_title .com_tag{}
+.top_feature .in_box .box .txt .bottom_title h3.subon{margin-top: 15px;}
+.top_feature .in_box .box .txt .bottom_title .sub_title{margin-top: 55px;font-size: 2.4rem;}
+.top_feature .in_box .box .txt .bottom_title p{margin-top: 30px;line-height: 36px;}
+.top_feature .in_box .box .txt .bottom_title .com_link {justify-content: flex-start;}
+.top_feature .in_box .box .txt .bottom_title .com_link a{padding: 0 20px;}
+
+
+
+/******************************************/
+/*6th SALES　*/
+/******************************************/
+.top_sales{
+    position: relative;z-index: 2;
+    background:#E5E3DE;
+    padding:180px 0px 0;
+}
+
+
+.top_sales h2.subon{
+
+}
+.top_sales ul{
+    margin-top: 65px;
+    list-style-type: none;
+    gap: 40px 5%;
+}
+.top_sales ul li{width: 30%;position: relative;}
+.top_sales ul li .img_area{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.top_sales ul li .img_area::before{
+    padding-top: 75%;
+    content: "";
+    display: block;
+}
+.top_sales ul li .img_area img{
+    position: absolute;
+    top: 0;right: 0;bottom: 0;left: 0;
+    margin: auto;
+    width: 100%;height: 100%;
+    object-fit: cover;
+}
+/* 縦書き　エリア */
+.top_sales ul li p.posi{
+    position: absolute;margin: 0;
+    writing-mode: vertical-rl;
+    right:100%;
+}
+.top_sales ul li .img_area p svg{margin-bottom:10px;}
+
+.top_sales ul li .model{
+    position: absolute;top: 8px;right: 8px;
+    background-color: #fff;
+    font-size: 1.4rem;
+    margin-top: 0;
+    height: auto;padding: 5px 10px;
+}
+
+/* テキスト */
+.top_sales ul li .txt_area{
+    margin-top:25px;
+}
+.top_sales ul li .txt_area .location,
+.top_sales ul li .txt_area .title_area,
+.top_sales ul li .txt_area .tag_area,
+.top_sales ul li .txt_area .price{
+    margin-top: 10px;
+}
+
+.top_sales ul li .txt_area .location{}
+.top_sales ul li .txt_area .location svg{margin-right: 8px;vertical-align: middle;}
+.top_sales ul li .txt_area .title_area{}
+.top_sales ul li .txt_area .tag_area{}
+.top_sales ul li .txt_area .tag_area .com_tag{margin-right:8px;}
+.top_sales ul li .txt_area .price{font-size: 1.4rem;}
+.top_sales ul li .txt_area .price span:before{content: "・";}
+.top_sales ul li .txt_area .price span{font-size: 2.4rem;vertical-align: baseline;margin-right: 10px;}
+.top_sales ul li{}
+.top_sales .com_bottom_link{margin-top: 80px;}
+
+
+/* パララックスエリア */
+/******************************************/
+.top_sales .para_area{
+    height: 320px;
+    overflow: hidden;
+}
+
+
+
+/***************************************************
+
+***************************************************/
+
+
+
+
+
+
+
+
+
 
 
 

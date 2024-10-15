@@ -3,8 +3,8 @@
 共通
 ***************************************************/
 
-
-
+img{max-width: 100%;}
+.in_padding{padding: 0 80px;}
 /***************************************************
 ボタン
 ***************************************************/
@@ -25,7 +25,31 @@
 .com_link .radias_btn_b {border-color: #000;color: #000;}
 .com_link .radias_btn_w {border-color: #fff;color: #fff;}
 
+/******************************************/
 
+.com_bottom_link{
+    border: 1px solid #000;
+    border-right:none;
+    border-left:none;
+    width: 100%;
+    padding: 25px 0;
+    display: block;
+    text-align: center;
+}
+.com_bottom_link:hover{
+padding: 30px 0;
+}
+
+/***************************************************
+タグ用囲い
+***************************************************/
+.com_tag{
+    border: 1px solid;border-radius: 50%;
+    height: 40px;border-radius: 20px;
+    padding: 0 10px;
+    margin-top: 30px;
+    line-height: 1;
+}
 /***************************************************
 横幅
 ***************************************************/
@@ -34,11 +58,17 @@
 /***************************************************
 Font
 ***************************************************/
+.sans{
+    font-family: "Noto Sans JP";
+}
 .enFont{
     font-family: "Cormorant Infant", serif;
     font-weight: 400;
 }
 
+.enFont_model{
+    font-family: "Manrope", sans-serif;
+}
 /***************************************************
 リンク
 ***************************************************/
@@ -55,3 +85,35 @@ FLEX
 .flex{display: flex;}
 .f_center{justify-content: center;align-items: center;align-content: center;}
 .f_bottom{justify-content: center;align-items: flex-end;align-content: flex-end;}
+
+
+/***************************************************
+タイトル共通
+***************************************************/
+.subon{
+    display: flex;justify-content: flex-start;
+    align-items: flex-end;line-height: 1;
+    margin: 0;
+}
+.subon span{
+    margin-left: 30px;
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+
+.subon.opbottom{display: block;}
+.subon.opbottom span{margin-left: 0;display: block;margin-top: 15px;}
+
+h2.subon{
+    font-size: 9.6rem;
+}
+h3.subon{
+    font-size: 4.8rem;
+}
+h4.subon{
+    font-size: 2.4rem;
+}
+
+h4.subon span{
+    font-size: 1.4rem;
+}

@@ -1,0 +1,131 @@
+{% comment %} {{ 'add_custom_blog_page.css' | asset_url | stylesheet_tag }} {% endcomment %}
+
+<div class="in_box">
+  <div class="box">
+    <div class="img_box">
+      <img class="main_img" src="{{ 'sample_feature1.jpg' | asset_url }}">
+    </div>
+    <div class="txt">
+        <div class="top_title">
+          <h4 class="subon opbottom">
+            FEATURE<br>
+            <span>別荘の特徴</span>
+          </h4>
+        </div>
+      <div class="bottom_title">
+
+      <span class="com_tag">01</span>
+        <h3 class="subon opbottom">
+          OPERATION
+          <span>貸別荘運用</span>
+        </h3>
+        <div class="sub_title">
+          利用しない時は別荘を運用
+        </div>
+        <p>
+          別荘保有での最大のお悩みは「購入後のランニングコストがいくらかかるのか」。このお悩みをクリアするために、it’s HOUSEは貸別荘としての運用をサポートします。
+        </p>
+        
+        
+        <div class="com_link">
+          <a href="" class="radias_btn_w">詳細を確認 {%- render 'arrow_link' -%} </a>
+        </div>
+    </div>
+  </div>
+  </div>
+  <img class="bg" src="{{ 'bg_feature.png' | asset_url }}">
+</div>
+
+<div class="in_box">
+  <div class="box">
+    <div class="img_box">
+      <img class="main_img" src="{{ 'sample_feature2.jpg' | asset_url }}">
+    </div>
+    <div class="txt">
+        <div class="top_title">
+          <h4 class="subon opbottom">
+            FEATURE<br>
+            <span>別荘の特徴</span>
+          </h4>
+        </div>
+      <div class="bottom_title">
+
+      <span class="com_tag">01</span>
+        <h3 class="subon opbottom">
+          PERFORMANCE
+          <span>基本性能</span>
+        </h3>
+        <div class="sub_title">
+          快適に暮らすための高性能
+        </div>
+        <p>
+          断熱性・気密性・耐震性などの基本性能は安心・安全かつ快適に暮らしていくためのベースとなる部分です。そのため全てのプランの標準使用で高いレベルの基本性能を実現しています。
+        </p>
+        
+        
+        <div class="com_link">
+          <a href="" class="radias_btn_w">詳細を確認 {%- render 'arrow_link' -%} </a>
+        </div>
+    </div>
+  </div>
+  </div>
+  <img class="bg" src="{{ 'bg_feature.png' | asset_url }}">
+</div>
+
+<div class="in_box">
+  <div class="box">
+    <div class="img_box">
+      <img class="main_img" src="{{ 'sample_feature3.jpg' | asset_url }}">
+    </div>
+    <div class="txt">
+        <div class="top_title">
+          <h4 class="subon opbottom">
+            FEATURE<br>
+            <span>別荘の特徴</span>
+          </h4>
+        </div>
+      <div class="bottom_title">
+
+      <span class="com_tag">01</span>
+        <h3 class="subon opbottom">
+          OFF GRID VILLA
+          <span>オフグリッド別荘を目指す</span>
+        </h3>
+        <div class="sub_title">
+          人と地球にやさしい
+        </div>
+        <p>
+          自然エネルギーを利用し自己完結型の別荘を目指しています。美しい自然と共生するためには人と地球環境について考えなければいけません。
+        </p>
+        
+        
+        <div class="com_link">
+          <a href="" class="radias_btn_w">詳細を確認 {%- render 'arrow_link' -%} </a>
+        </div>
+    </div>
+  </div>
+  </div>
+  <img class="bg" src="{{ 'bg_feature.png' | asset_url }}">
+</div>
+
+
+{% schema %}
+{
+  "name": "トップ 5 feature",
+  "tag": "section",
+  "class": "top_feature",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    
+  
+  ],
+  
+  "presets": [
+    {
+      "name": "トップ 5 feature"
+    }
+  ]
+}
+{% endschema %}

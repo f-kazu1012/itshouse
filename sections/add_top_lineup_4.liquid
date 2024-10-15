@@ -1,0 +1,112 @@
+{% comment %} {{ 'add_custom_blog_page.css' | asset_url | stylesheet_tag }} {% endcomment %}
+{% comment %} 
+/***************************************************
+ トップ画像エリア
+***************************************************/
+{% endcomment %}
+
+<div id="lineup">  </div>
+
+<style>
+
+.top_lineup .swiper{
+  cursor: url({{ 'more_cursor.svg' | asset_url }}),auto;
+}
+</style>
+
+<link
+ rel="stylesheet"
+ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+<h2 class="subon">
+  LINE UP 
+  <span>今すぐ購入できる<br>it’s HOUSEの別荘</span>
+</h2>
+
+<!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    {%- render 'add_lineup_slide' -%}
+    {%- render 'add_lineup_slide' -%}
+    {%- render 'add_lineup_slide' -%}
+    {%- render 'add_lineup_slide' -%}
+    {%- render 'add_lineup_slide' -%}
+    {%- render 'add_lineup_slide' -%}
+    {%- render 'add_lineup_slide' -%}
+  </div>
+
+  <div class="swiper-pagination"></div>
+</div>
+
+<script>
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+   // And if we need scrollbar
+   pagination: {
+        el: ".swiper-pagination",
+        // dynamicBullets: true,
+      },
+  });
+</script>
+
+
+
+{% comment %} 
+/***************************************************
+LINE UP内容を一覧表示
+***************************************************/
+ {% endcomment %}
+
+ <div class="villa_list">
+  <h3 class="subon">
+    VILLA LIST
+    <span>別荘一覧</span>
+  </h3>
+
+  <div class="list">
+    <ul class="flex">
+      {%- render 'add_lineup_list_contents' -%}     
+      {%- render 'add_lineup_list_contents' -%}     
+      {%- render 'add_lineup_list_contents' -%}     
+      {%- render 'add_lineup_list_contents' -%}     
+      {%- render 'add_lineup_list_contents' -%}     
+      {%- render 'add_lineup_list_contents' -%}     
+      {%- render 'add_lineup_list_contents' -%}     
+      {%- render 'add_lineup_list_contents' -%}     
+      {%- render 'add_lineup_list_contents' -%}     
+    </ul>
+  </div>
+ </div>
+
+
+ {% comment %} 
+ /******************************************/
+  {% endcomment %}
+<a href="" class="com_bottom_link enFont_model">VIEW MORE</a>
+
+{% schema %}
+{
+  "name": "トップ 4 LINEUPエリア",
+  "tag": "section",
+  "class": "top_lineup",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    
+  
+  ],
+  
+  "presets": [
+    {
+      "name": "トップ 4  LINEUPエリア"
+    }
+  ]
+}
+{% endschema %}
