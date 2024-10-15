@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "add_top_fv_1_cEmJgY": {
@@ -20,7 +29,7 @@
             "heading_size": "h1",
             "subheading": "",
             "button_label": "Button label",
-            "link": "shopify:\/\/collections",
+            "link": "shopify://collections",
             "button_style_secondary": false,
             "box_align": "middle-right",
             "show_text_box": false,
@@ -143,6 +152,21 @@
       "type": "add_top_about_3",
       "settings": {
       }
+    },
+    "add_top_lineup_4_GphGTh": {
+      "type": "add_top_lineup_4",
+      "settings": {
+      }
+    },
+    "add_top_feature_5_cGHTMh": {
+      "type": "add_top_feature_5",
+      "settings": {
+      }
+    },
+    "add_top_sales_6_YXbjpt": {
+      "type": "add_top_sales_6",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -152,6 +176,9 @@
     "all-products",
     "collection-list",
     "image-banner",
-    "add_top_about_3_C7QWM7"
+    "add_top_about_3_C7QWM7",
+    "add_top_lineup_4_GphGTh",
+    "add_top_feature_5_cGHTMh",
+    "add_top_sales_6_YXbjpt"
   ]
 }
